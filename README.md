@@ -1,4 +1,4 @@
-#Blog website developed using MERN stack
+# Blog website developed using MERN stack
 
 **To run this project:**
 
