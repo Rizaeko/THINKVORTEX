@@ -6,6 +6,10 @@ import Aboutus from './Pages/Aboutus'
 import Contact from './Pages/Contact'
 import Signin from './Pages/Signin'
 import Layout from './Layout/Layout'
+import Register from './Pages/Register'
+import BlogPost from './Pages/BlogPost'
+import UserEditor from './Pages/UserEditor'
+import PageNotFound from './Pages/PageNotFound'
 
 
 const MyRoutes = () => {
@@ -14,12 +18,18 @@ const MyRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Layout/>}>
-                    <Route index element={<Home/>}></Route>
-                    <Route path='/blog' element={<Blog/>}/>
-                    <Route path='/aboutus' element={<Aboutus/>}/>
-                    <Route path='/contact' element={<Contact/>}/>
-                    <Route path='/signin' element={<Signin/>}/>
+                    <Route index element={<Blog/>}></Route>
+                    <Route path='/Blog' element={<Blog/>}/>
+                    <Route path='/AboutUs' element={<Aboutus/>}/>
+                    <Route path='/Contact' element={<Contact/>}/>
+                    <Route path='/SignIn' element={<Signin/>}/>
+                    <Route path='/Register' element={<Register/>} />
+                    <Route path='/BlogPost' element={<BlogPost/>}/>
+                    <Route path='/Home' element={<Home/>}/>
+                    <Route path='/UserEditor' element={<UserEditor/>}/>
+                    
                 </Route>
+                <Route path='*' element={<PageNotFound/>}/>
             </Routes>
         </BrowserRouter>
     </>
