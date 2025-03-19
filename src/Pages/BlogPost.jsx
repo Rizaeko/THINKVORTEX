@@ -1,13 +1,17 @@
 import React from 'react'
 import BlogCategory from './BlogCategory'
-import Posts from './Posts'
+
 
 
 const BlogPost = () => {
   return (
     <>
-      <BlogCategory />
-      <Posts/>
+      <aside className='w-60 h-100 bg-[var(--primary-color)]'>
+
+      </aside>
+      <div className='flex flex-col xl:flex-row gap-8'>
+        <img src='' />
+      </div>
     </>
   )
 }
