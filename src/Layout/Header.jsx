@@ -17,7 +17,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="border-2 border-gray-400 p-2 rounded-full flex gap-2">
+        <div className="border-2 border-gray-400 p-2 rounded-full flex gap-2 ">
           <SearchIcon color='gray'/>
           <input type='text' placeholder='Search' className='bg-transparent outline-0'/>
         </div>

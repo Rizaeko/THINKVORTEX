@@ -1,5 +1,6 @@
 import React from 'react'
 import Nepal from '../Images/Nepal.jpg'
+import { Link } from 'react-router-dom'
 
 const PageViewed = () => {
   return (
