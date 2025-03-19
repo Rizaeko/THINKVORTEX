@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
-import Blog from './Pages/Blog'
 import Aboutus from './Pages/Aboutus'
 import Contact from './Pages/Contact'
 import Signin from './Pages/Signin'
@@ -10,6 +9,7 @@ import Register from './Pages/Register'
 import BlogPost from './Pages/BlogPost'
 import UserEditor from './Pages/UserEditor'
 import PageNotFound from './Pages/PageNotFound'
+import Posts from './Pages/Posts'
 
 
 const MyRoutes = () => {
@@ -18,8 +18,7 @@ const MyRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Layout/>}>
-                    <Route index element={<Blog/>}></Route>
-                    <Route path='/Blog' element={<Blog/>}/>
+                    <Route index element={<BlogPost/>}></Route>
                     <Route path='/AboutUs' element={<Aboutus/>}/>
                     <Route path='/Contact' element={<Contact/>}/>
                     <Route path='/SignIn' element={<Signin/>}/>
@@ -27,7 +26,7 @@ const MyRoutes = () => {
                     <Route path='/BlogPost' element={<BlogPost/>}/>
                     <Route path='/Home' element={<Home/>}/>
                     <Route path='/UserEditor' element={<UserEditor/>}/>
-                    
+                    <Route path='/Posts' element={<Posts/>}/>
                 </Route>
                 <Route path='*' element={<PageNotFound/>}/>
             </Routes>

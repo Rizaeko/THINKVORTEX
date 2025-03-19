@@ -1,8 +1,11 @@
+import { SignUp } from '@clerk/clerk-react'
 import React from 'react'
 
 const Register = () => {
   return (
-    <div className='text-3xl'>Register</div>
+    <div className='flex justify-center'>
+      <SignUp signInUrl='/Signin'/>
+    </div>
   )
 }
 
