@@ -2,20 +2,19 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-reac
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Image from '../Components/Image';
-import { SearchIcon } from 'lucide-react';
+import { SearchIcon, SquarePen } from 'lucide-react';
 
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
   return (
     <>
     <header>
       <nav className='flex items-center h-12 my-5 cursor-pointer font-medium'>
-
+        <Link to={'/'}>
         <div>
           <Image src="logo.png" w="175" h="50"/> 
         </div>
-
+        </Link>
         <div class="flex items-center max-w-sm rounded-full bg-gray-50 ml-4">   
             <div class="relative w-full ">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3">
@@ -34,9 +33,14 @@ const Header = () => {
             </Link>
           </SignedOut>
           <SignedIn className="w-11 h-11">
-            <div className=''>
+            <Link to={'UserEditor'}>
+            <div className='flex gap-4 hover:underline'>
               Write
+              <div>
+                <SquarePen />
+              </div>
             </div>
+            </Link>
             <UserButton />
           </SignedIn>
         </div> 

@@ -1,21 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
       <footer className="">
         
-  <div className="mx-auto max-w-full px-4 pt-10 sm:px-6 lg:px-8">
+  <div className="mx-auto max-w-full px-4 pt-10 sm:px-6 lg:px-8 mb-3">
   
     <div className="mt-5 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       
-        <div className="transition hover:text-[#F84343] cursor-pointer" > About </div>
+        <div className="transition hover:text-[#F84343] cursor-pointer" ><Link to={'Aboutus'}> About</Link> </div>
 
         <div className="transition hover:text-[#F84343] cursor-pointer" > Careers </div>
 
         <div className="transition hover:text-[#F84343] cursor-pointer" > History </div>
 
-        <div className="transition hover:text-[#F84343] cursor-pointer" > Contact </div>
+        <div className="transition hover:text-[#F84343] cursor-pointer" ><Link to={'Contact'}> Contact </Link></div>
       
     </div>
 
