@@ -19,3 +19,27 @@ body {
     background-color: #f3f6f4;
 }
 
+@layer components {
+    .navbar {
+        @apply flex items-center h-12 my-5 cursor-pointer font-medium text-[min(10vw,14px)];
+    }
+    .search-bar {
+        @apply flex items-center max-w-sm rounded-full bg-gray-50 ml-4;
+    }
+    .signin {
+        @apply py-2 px-4 transition-colors duration-300 bg-[var(--primary-color)] rounded-full text-white hover:bg-[#f95353] ;
+    }
+    .signup {
+        @apply py-2 px-4 transition-colors duration-300 rounded-full text-[var(--primary-text)] bg-gray-200;
+    }
+    .navbar-right {
+        @apply ml-auto flex items-center space-x-reverse space-x-2 gap-5 mr-2;
+    }
+    .search-icon {
+        @apply absolute inset-y-0 start-0 flex items-center ps-3;    
+    }
+    .search-input {
+        @apply text-sm rounded-full w-full ps-10 p-2.5 focus:outline-none;
+    }
+}
+

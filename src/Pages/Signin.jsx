@@ -5,7 +5,7 @@ const Signin = () => {
   return (
     <>
       <div className="flex justify-center">
-        <SignIn signUpUrl='/Register'/>
+        
       </div>
     </>
   )

@@ -10,11 +10,11 @@ const Footer = () => {
   
     <div className="mt-5 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       
-        <div className="transition hover:text-[#F84343] cursor-pointer" ><Link to={'Aboutus'}> About</Link> </div>
+        <div className="transition hover:text-[#F84343] cursor-pointer" ><Link to={'Team'}> About</Link> </div>
 
         <div className="transition hover:text-[#F84343] cursor-pointer" > Careers </div>
 
-        <div className="transition hover:text-[#F84343] cursor-pointer" > History </div>
+        {/* <div className="transition hover:text-[#F84343] cursor-pointer" > History </div> */}
 
         <div className="transition hover:text-[#F84343] cursor-pointer" ><Link to={'Contact'}> Contact </Link></div>
       
